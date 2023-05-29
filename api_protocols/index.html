@@ -1368,20 +1368,29 @@
 <tr>
 <th>Протокол</th>
 <th>Подробнее</th>
+<th>Endpoint</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>gRPC</td>
 <td>API реализован на быстром, удобном и функциональном протоколе <a href="https://grpc.io/docs/">gRPC</a>.</td>
+<td>https://invest-public-api.tinkoff.ru:443 - продовый сервис, https://sandbox-invest-public-api.tinkoff.ru:443 - сервис песочницы</td>
 </tr>
 <tr>
 <td>gRPC-web</td>
 <td>Для поддержки web-клиентов, например браузерных JS скриптов, внедрена поддержка <a href="https://grpc.io/docs/platforms/web/basics/">gRPC-web</a>.</td>
+<td>https://invest-public-api.tinkoff.ru:443 - продовый сервис, https://sandbox-invest-public-api.tinkoff.ru:443 - сервис песочницы</td>
 </tr>
 <tr>
 <td>REST API</td>
-<td>Для клиентов, привыкших работать с REST API, реализован прокси <a href="https://tinkoff.github.io/investAPI/swagger-ui/">Swagger</a></td>
+<td>Для клиентов, привыкших работать с REST API, реализован прокси <a href="https://tinkoff.github.io/investAPI/swagger-ui/">Swagger</a>. Инструкцию по использованию Swagger вы можете прочитать <a href="/investAPI/swagger/">здесь</a>.</td>
+<td>https://invest-public-api.tinkoff.ru/rest/- продовый сервис, https://sandbox-invest-public-api.tinkoff.ru/rest/ -- сервис песочницы</td>
+</tr>
+<tr>
+<td>WebSoket</td>
+<td>Внедрена поддержка <a href="src\docs\ws\README.md">Websoket протокола</a>.</td>
+<td>wss://invest-public-api.tinkoff.ru/ws/</td>
 </tr>
 </tbody>
 </table>

@@ -9,17 +9,13 @@
       
       
       
-        <link rel="prev" href="../deadlines/">
-      
-      
-        <link rel="next" href="../table_order_currency/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Таблица конкурсных работ - TINKOFF INVEST API</title>
+        <title>Swagger - TINKOFF INVEST API</title>
       
     
     
@@ -67,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#swagger" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -102,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Таблица конкурсных работ
+              Swagger
             
           </span>
         </div>
@@ -210,16 +206,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
       
       
       
@@ -228,7 +222,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
           Начало работы
@@ -407,21 +401,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../robot_contest/" class="md-nav__link">
         Таблица конкурсных работ
       </a>
-      
     </li>
   
 
@@ -1341,8 +1325,55 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание раздела
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#swagger" class="md-nav__link">
+    Что такое Swagger?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swagger-ui" class="md-nav__link">
+    Что такое Swagger UI?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Инструкция по использованию
+  </a>
+  
+    <nav class="md-nav" aria-label="Инструкция по использованию">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Авторизация
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Создание запроса
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1360,76 +1391,45 @@
   
 
 
-<h1 id="_1">Таблица конкурсных работ</h1>
-<p>Мы проводили конкурс по разработке торгового робота для Тинькофф Инвестиций. Задачей участников было написать пример торговой системы, которая реализует любую торговую стратегию на бирже. Работать она должна была на новом API Тинькофф Инвестиций. </p>
-<p>Ниже представлены работы сообщества, реализованные в рамках конкурса. Работы созданы энтузиастами - их использование осуществляется пользователем на свой страх и риск. 
-Ознакомиться со всеми конкурсными работами вы можете <a href="https://github.com/Tinkoff/invest-robot-contest/blob/main/table-result.md">здесь</a>.</p>
-<table>
-<thead>
-<tr>
-<th>Репозиторий</th>
-<th>Описание</th>
-<th>Язык</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/AndreVasilev/Kwatoko">https://github.com/AndreVasilev/Kwatoko</a></td>
-<td>Победитель номинации “Лучший торговый робот для мобильных устройств”.<br><br>Приложение на swift для яблочных устройств.<br>В приложении доступно создание до 10 роботов с указанием стратегии, инструмента и всех необходимых для торговли по выбранной стратегии параметров.</td>
-<td>Swift</td>
-</tr>
-<tr>
-<td><a href="https://github.com/DenisKamensky/tinkoff-invest-robot-contest-">https://github.com/DenisKamensky/tinkoff-invest-robot-contest-</a></td>
-<td>Робот на NodeJS c поддержкой нескольких бирж.</td>
-<td>JS</td>
-</tr>
-<tr>
-<td><a href="https://github.com/EIDiamond/invest-bot">https://github.com/EIDiamond/invest-bot</a></td>
-<td>Робот на python для интрадей торговли на Московской бирже с возможность информирования о сделках и результатах торговли в Telegram чат.</td>
-<td>Python</td>
-</tr>
-<tr>
-<td><a href="https://github.com/khutdi/TI_API_2">https://github.com/khutdi/TI_API_2</a></td>
-<td>Инструмент проработки торговых стратегий через Tinkoff API на Python.</td>
-<td>Python</td>
-</tr>
-<tr>
-<td><a href="https://github.com/MitjaSh/tinkoff_trader">https://github.com/MitjaSh/tinkoff_trader</a></td>
-<td>Торговый робот на Python.</td>
-<td>Python</td>
-</tr>
-<tr>
-<td><a href="https://github.com/Pruanik/tinkoff-trading-bot">https://github.com/Pruanik/tinkoff-trading-bot</a></td>
-<td>Торговый робот на Go и JS, имеет UI и хорошее описание.</td>
-<td>Go, JS</td>
-</tr>
-<tr>
-<td><a href="https://github.com/pskucherov/OpexBot">https://github.com/pskucherov/OpexBot</a></td>
-<td>Торговый робот на JS, вся работа с роботом происходит через UI.</td>
-<td>JS</td>
-</tr>
-<tr>
-<td><a href="https://github.com/pskucherov/OpexViewer">https://github.com/pskucherov/OpexViewer</a></td>
-<td><span style="font-size:10pt;font-family:Arial;font-weight:bold;font-style:normal;">UI для торгового робота </span><a href="https://github.com/pskucherov/OpexViewer"><span style="font-size:10pt;font-family:Arial;font-weight:bold;font-style:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;color:#1155cc;">https://github.com/pskucherov/OpexBot</span></a></td>
-<td>JS</td>
-</tr>
-<tr>
-<td><a href="https://github.com/qwertyo1/tinkoff-trading-bot">https://github.com/qwertyo1/tinkoff-trading-bot</a></td>
-<td>Победитель в номинации “Лучший пример торгового робота на языке Python”. Выделяется простотой сборки и качеством работы.</td>
-<td>Python</td>
-</tr>
-<tr>
-<td><a href="https://github.com/roman-struchev/tinkoff-invest">https://github.com/roman-struchev/tinkoff-invest</a></td>
-<td>Победитель в номинации “Лучший пример торгового робота на языке Java”. К роботу опционально подключается Телеграм бот, поддерживается запуск из docker, имеется CI\CD и статистика по брокерскому счету.</td>
-<td>Java</td>
-</tr>
-<tr>
-<td><a href="https://github.com/VladimirTalyzin/NeuroInvest">https://github.com/VladimirTalyzin/NeuroInvest</a></td>
-<td>Торговый робот с серверной частью на Python и мобильное приложение для просмотра данных на Kotlin.</td>
-<td>Python</td>
-</tr>
-</tbody>
-</table>
+  <h1>Swagger</h1>
+
+<h2 id="swagger">Что такое Swagger?</h2>
+<p><strong>Swagger</strong> - это фреймворк для спецификации RESTful API. Один из его инструментов, Swagger UI, позволяет не только интерактивно просматривать спецификацию, но и отправлять запросы.</p>
+<h2 id="swagger-ui">Что такое Swagger UI?</h2>
+<p><strong><a href="https://swagger.io/tools/swagger-ui/">Swagger UI</a></strong> - один из самых популярных инструментов для создания интерактивной документации. Swagger UI создает интерактивную консоль API для экспериментов с запросами в реальном времени. </p>
+<h2 id="_1">Инструкция по использованию</h2>
+<h3 id="_2">Авторизация</h3>
+<p>Прежде чем делать какие-либо запросы, нужна авторизация. Нажимаем кнопку Authorize и заполняем информацию, требуемую в окне «Авторизация», изображенном ниже:</p>
+<p><img alt="Swagger авторизация" src="/investAPI/img/Auth_swagger1.png" title="Swagger авторизация" /></p>
+<p><img alt="Swagger авторизация - интерфейс" src="/investAPI/img/Auth_swagger.png" title="Swagger авторизация - интерфейс" /></p>
+<p>В нашем случае необходимо ввести токен токен доступа. Подробнее о том, как получить токен можно узнать по ссылке: <a href="/investAPI/token/">Токен доступа</a></p>
+<p>Например:
+<code>t.QtEo8ahkNFX4RTpbqp0u4z4GDZq27HzUp6AotJASBx7_DVqmqZMHfM2Cy7JmUjS80boI9eVg</code></p>
+<h3 id="_3">Создание запроса</h3>
+<p>Теперь создадим запрос:</p>
+<ul>
+<li>Разворачиваем конечную точку </li>
+<li>Нажимаем кнопку Try it out</li>
+</ul>
+<p><img alt="Swagger Try" src="/investAPI/img/Swagger_try.png" title="Swagger Try" /></p>
+<ul>
+<li>
+<p>После того, как мы нажмем кнопку Try it out, значение примера в поле «Тело запроса» станет редактируемым.</p>
+</li>
+<li>
+<p>В редактируемом поле изменяем значения параметров.</p>
+</li>
+<li>
+<p>Нажимаем Execute.</p>
+</li>
+</ul>
+<p><img alt="Swagger Try 2" src="/investAPI/img/Swagger_try2.png" title="Swagger Try 2" /></p>
+<p>Пользовательский интерфейс Swagger отправляет запрос и показывает отправленный curl. Раздел Ответы показывает тело ответа и заголовки ответа.</p>
+<p>Самый ожидаемый ответ, в случае правильной обработки запроса сервером, имеет код 200 и показывает то, как должна выглядеть структура ответа.</p>
+<p><img alt="Swagger Response" src="/investAPI/img/response_swagger.png" title="Swagger Respons" /></p>
+<p><img alt="Swagger Response" src="/investAPI/img/response_swagger2.png" title="Swagger Respons" /></p>
+<p>C помощью Swagger вы можете тестировать методы <a href="https://tinkoff.github.io/investAPI/swagger-ui/">Tinkoff Invest API</a>.</p>
+<p>Официальную документацию вы можете найти на сайте <a href="https://swagger.io/">Swagger</a>.</p>
 
 
 
