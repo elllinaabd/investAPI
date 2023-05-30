@@ -9,17 +9,13 @@
       
       
       
-        <link rel="prev" href="../head-orders/">
-      
-      
-        <link rel="next" href="../faq_orders/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Методы - TINKOFF INVEST API</title>
+        <title>Signals - TINKOFF INVEST API</title>
       
     
     
@@ -67,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ordersstreamservice" class="md-skip">
+        <a href="#signalservice" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -102,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Методы
+              Signals
             
           </span>
         </div>
@@ -904,16 +900,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
       
       
       
@@ -922,7 +916,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Сервис ордеров
@@ -947,321 +941,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Методы
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../orders/" class="md-nav__link">
         Методы
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Содержание раздела">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание раздела
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ordersstreamservice" class="md-nav__link">
-    OrdersStreamService
-  </a>
-  
-    <nav class="md-nav" aria-label="OrdersStreamService">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    Методы сервиса
-  </a>
-  
-    <nav class="md-nav" aria-label="Методы сервиса">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tradesstream" class="md-nav__link">
-    TradesStream
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ordersservice" class="md-nav__link">
-    OrdersService
-  </a>
-  
-    <nav class="md-nav" aria-label="OrdersService">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Методы сервиса
-  </a>
-  
-    <nav class="md-nav" aria-label="Методы сервиса">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#postorder" class="md-nav__link">
-    PostOrder
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cancelorder" class="md-nav__link">
-    CancelOrder
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getorderstate" class="md-nav__link">
-    GetOrderState
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getorders" class="md-nav__link">
-    GetOrders
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#replaceorder" class="md-nav__link">
-    ReplaceOrder
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    Сообщения методов
-  </a>
-  
-    <nav class="md-nav" aria-label="Сообщения методов">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tradesstreamrequest" class="md-nav__link">
-    TradesStreamRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tradesstreamresponse" class="md-nav__link">
-    TradesStreamResponse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ordertrades" class="md-nav__link">
-    OrderTrades
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ordertrade" class="md-nav__link">
-    OrderTrade
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#postorderrequest" class="md-nav__link">
-    PostOrderRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#postorderresponse" class="md-nav__link">
-    PostOrderResponse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cancelorderrequest" class="md-nav__link">
-    CancelOrderRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cancelorderresponse" class="md-nav__link">
-    CancelOrderResponse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getorderstaterequest" class="md-nav__link">
-    GetOrderStateRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getordersrequest" class="md-nav__link">
-    GetOrdersRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getordersresponse" class="md-nav__link">
-    GetOrdersResponse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#orderstate" class="md-nav__link">
-    OrderState
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#orderstage" class="md-nav__link">
-    OrderStage
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#replaceorderrequest" class="md-nav__link">
-    ReplaceOrderRequest
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enums" class="md-nav__link">
-    Enums
-  </a>
-  
-    <nav class="md-nav" aria-label="Enums">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#orderdirection" class="md-nav__link">
-    OrderDirection
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ordertype" class="md-nav__link">
-    OrderType
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#orderexecutionreportstatus" class="md-nav__link">
-    OrderExecutionReportStatus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pricetype" class="md-nav__link">
-    PriceType
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#securitytradingstatus" class="md-nav__link">
-    SecurityTradingStatus
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    Нестандартные типы данных
-  </a>
-  
-    <nav class="md-nav" aria-label="Нестандартные типы данных">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#moneyvalue" class="md-nav__link">
-    MoneyValue
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#quotation" class="md-nav__link">
-    Quotation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1691,11 +1375,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ordersstreamservice" class="md-nav__link">
-    OrdersStreamService
+  <a href="#signalservice" class="md-nav__link">
+    SignalService
   </a>
   
-    <nav class="md-nav" aria-label="OrdersStreamService">
+    <nav class="md-nav" aria-label="SignalService">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1707,8 +1391,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tradesstream" class="md-nav__link">
-    TradesStream
+  <a href="#getstrategies" class="md-nav__link">
+    GetStrategies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsignals" class="md-nav__link">
+    GetSignals
   </a>
   
 </li>
@@ -1717,70 +1408,9 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ordersservice" class="md-nav__link">
-    OrdersService
-  </a>
-  
-    <nav class="md-nav" aria-label="OrdersService">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    Методы сервиса
-  </a>
-  
-    <nav class="md-nav" aria-label="Методы сервиса">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#postorder" class="md-nav__link">
-    PostOrder
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cancelorder" class="md-nav__link">
-    CancelOrder
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getorderstate" class="md-nav__link">
-    GetOrderState
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getorders" class="md-nav__link">
-    GetOrders
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#replaceorder" class="md-nav__link">
-    ReplaceOrder
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
     Сообщения методов
   </a>
   
@@ -1788,99 +1418,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tradesstreamrequest" class="md-nav__link">
-    TradesStreamRequest
+  <a href="#getstrategiesrequest" class="md-nav__link">
+    GetStrategiesRequest
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#tradesstreamresponse" class="md-nav__link">
-    TradesStreamResponse
+  <a href="#getstrategiesresponse" class="md-nav__link">
+    GetStrategiesResponse
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ordertrades" class="md-nav__link">
-    OrderTrades
+  <a href="#strategy" class="md-nav__link">
+    Strategy
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ordertrade" class="md-nav__link">
-    OrderTrade
+  <a href="#getsignalsrequest" class="md-nav__link">
+    GetSignalsRequest
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#postorderrequest" class="md-nav__link">
-    PostOrderRequest
+  <a href="#getsignalsresponse" class="md-nav__link">
+    GetSignalsResponse
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#postorderresponse" class="md-nav__link">
-    PostOrderResponse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cancelorderrequest" class="md-nav__link">
-    CancelOrderRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cancelorderresponse" class="md-nav__link">
-    CancelOrderResponse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getorderstaterequest" class="md-nav__link">
-    GetOrderStateRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getordersrequest" class="md-nav__link">
-    GetOrdersRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getordersresponse" class="md-nav__link">
-    GetOrdersResponse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#orderstate" class="md-nav__link">
-    OrderState
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#orderstage" class="md-nav__link">
-    OrderStage
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#replaceorderrequest" class="md-nav__link">
-    ReplaceOrderRequest
+  <a href="#signal" class="md-nav__link">
+    Signal
   </a>
   
 </li>
@@ -1899,34 +1473,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#orderdirection" class="md-nav__link">
-    OrderDirection
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ordertype" class="md-nav__link">
-    OrderType
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#orderexecutionreportstatus" class="md-nav__link">
-    OrderExecutionReportStatus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pricetype" class="md-nav__link">
-    PriceType
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#securitytradingstatus" class="md-nav__link">
     SecurityTradingStatus
   </a>
@@ -1939,7 +1485,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     Нестандартные типы данных
   </a>
   
@@ -1988,83 +1534,33 @@
   
 
 
-  <h1>Методы</h1>
+  <h1>Signals</h1>
 
-<h2 id="ordersstreamservice">OrdersStreamService</h2>
+<h2 id="signalservice">SignalService</h2>
 <h3 id="_1">Методы сервиса</h3>
-<h4 id="tradesstream">TradesStream</h4>
-<p>Stream сделок пользователя</p>
+<h4 id="getstrategies">GetStrategies</h4>
 <ul>
 <li>
-<p>Тело запроса — <a href="#tradesstreamrequest">TradesStreamRequest</a></p>
+<p>Тело запроса — <a href="#getstrategiesrequest">GetStrategiesRequest</a></p>
 </li>
 <li>
-<p>Тело ответа — <a href="#tradesstreamresponse">TradesStreamResponse</a></p>
+<p>Тело ответа — <a href="#getstrategiesresponse">GetStrategiesResponse</a></p>
 </li>
 </ul>
-<!-- range .Methods -->
-
-<h2 id="ordersservice">OrdersService</h2>
-<p>Сервис предназначен для работы с торговыми поручениями:</br> <strong>1</strong>.
-выставление;</br> <strong>2</strong>. отмена;</br> <strong>3</strong>. получение статуса;</br> <strong>4</strong>.
-расчёт полной стоимости;</br> <strong>5</strong>. получение списка заявок.</p>
-<h3 id="_2">Методы сервиса</h3>
-<h4 id="postorder">PostOrder</h4>
-<p>Метод выставления заявки.</p>
+<h4 id="getsignals">GetSignals</h4>
 <ul>
 <li>
-<p>Тело запроса — <a href="#postorderrequest">PostOrderRequest</a></p>
+<p>Тело запроса — <a href="#getsignalsrequest">GetSignalsRequest</a></p>
 </li>
 <li>
-<p>Тело ответа — <a href="#postorderresponse">PostOrderResponse</a></p>
-</li>
-</ul>
-<h4 id="cancelorder">CancelOrder</h4>
-<p>Метод отмены биржевой заявки.</p>
-<ul>
-<li>
-<p>Тело запроса — <a href="#cancelorderrequest">CancelOrderRequest</a></p>
-</li>
-<li>
-<p>Тело ответа — <a href="#cancelorderresponse">CancelOrderResponse</a></p>
-</li>
-</ul>
-<h4 id="getorderstate">GetOrderState</h4>
-<p>Метод получения статуса торгового поручения.</p>
-<ul>
-<li>
-<p>Тело запроса — <a href="#getorderstaterequest">GetOrderStateRequest</a></p>
-</li>
-<li>
-<p>Тело ответа — <a href="#orderstate">OrderState</a></p>
-</li>
-</ul>
-<h4 id="getorders">GetOrders</h4>
-<p>Метод получения списка активных заявок по счёту.</p>
-<ul>
-<li>
-<p>Тело запроса — <a href="#getordersrequest">GetOrdersRequest</a></p>
-</li>
-<li>
-<p>Тело ответа — <a href="#getordersresponse">GetOrdersResponse</a></p>
-</li>
-</ul>
-<h4 id="replaceorder">ReplaceOrder</h4>
-<p>Метод изменения выставленной заявки.</p>
-<ul>
-<li>
-<p>Тело запроса — <a href="#replaceorderrequest">ReplaceOrderRequest</a></p>
-</li>
-<li>
-<p>Тело ответа — <a href="#postorderresponse">PostOrderResponse</a></p>
+<p>Тело ответа — <a href="#getsignalsresponse">GetSignalsResponse</a></p>
 </li>
 </ul>
 <!-- range .Methods -->
 <!-- range .Services -->
 
-<h3 id="_3">Сообщения методов</h3>
-<h4 id="tradesstreamrequest">TradesStreamRequest</h4>
-<p>Запрос установки соединения.</p>
+<h3 id="_2">Сообщения методов</h3>
+<h4 id="getstrategiesrequest">GetStrategiesRequest</h4>
 <table>
 <thead>
 <tr>
@@ -2075,134 +1571,116 @@
 </thead>
 <tbody>
 <tr>
-<td>accounts</td>
-<td>Массив объектов <a href="#string">string</a></td>
-<td>Идентификаторы счетов.</td>
-</tr>
-<tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="tradesstreamresponse">TradesStreamResponse</h4>
-<p>Информация о торговых поручениях.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>order_trades</td>
-<td><a href="#ordertrades">OrderTrades</a></td>
-<td>Информация об исполнении торгового поручения.</td>
-</tr>
-<tr>
-<td>ping</td>
-<td><a href="#ping">Ping</a></td>
-<td>Проверка активности стрима.</td>
-</tr>
-<tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="ordertrades">OrderTrades</h4>
-<p>Информация об исполнении торгового поручения.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>order_id</td>
+<td>strategy_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор торгового поручения.</td>
+<td>Идентификатор стратегии</td>
 </tr>
 <tr>
-<td>created_at</td>
+<td><!-- end Fields --></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- end HasFields -->
+
+<h4 id="getstrategiesresponse">GetStrategiesResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strategies</td>
+<td>Массив объектов <a href="#strategy">Strategy</a></td>
+<td></td>
+</tr>
+<tr>
+<td><!-- end Fields --></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- end HasFields -->
+
+<h4 id="strategy">Strategy</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strategy_id</td>
+<td><a href="#string">string</a></td>
+<td>Идентификатор стратегии</td>
+</tr>
+<tr>
+<td>strategy_name</td>
+<td><a href="#string">string</a></td>
+<td>Название стратегии</td>
+</tr>
+<tr>
+<td>strategy_description</td>
+<td><a href="#string">string</a></td>
+<td>Описание стратегии</td>
+</tr>
+<tr>
+<td>strategy_url</td>
+<td><a href="#string">string</a></td>
+<td>Ссылка на страницу с описанием стратегии</td>
+</tr>
+<tr>
+<td><!-- end Fields --></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- end HasFields -->
+
+<h4 id="getsignalsrequest">GetSignalsRequest</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strategy_id</td>
+<td><a href="#string">string</a></td>
+<td>Идентификатор стратегии</td>
+</tr>
+<tr>
+<td>from</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата и время создания сообщения в часовом поясе UTC.</td>
-</tr>
-<tr>
-<td>direction</td>
-<td><a href="#orderdirection">OrderDirection</a></td>
-<td>Направление сделки.</td>
-</tr>
-<tr>
-<td>figi</td>
-<td><a href="#string">string</a></td>
-<td>Figi-идентификатор инструмента.</td>
-</tr>
-<tr>
-<td>trades</td>
-<td>Массив объектов <a href="#ordertrade">OrderTrade</a></td>
-<td>Массив сделок.</td>
-</tr>
-<tr>
-<td>account_id</td>
-<td><a href="#string">string</a></td>
-<td>Идентификатор счёта.</td>
+<td>Дата начала запрашиваемого интервала в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>instrument_uid</td>
 <td><a href="#string">string</a></td>
-<td>UID идентификатор инструмента.</td>
+<td>Идентификатор  бумаги</td>
 </tr>
 <tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="ordertrade">OrderTrade</h4>
-<p>Информация о сделке.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>date_time</td>
+<td>to</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата и время совершения сделки в часовом поясе UTC.</td>
+<td>Дата конца запрашиваемого интервала  в часовом поясе UTC.</td>
 </tr>
 <tr>
-<td>price</td>
-<td><a href="#quotation">Quotation</a></td>
-<td>Цена за 1 инструмент, по которой совершена сделка.</td>
-</tr>
-<tr>
-<td>quantity</td>
-<td><a href="#int64">int64</a></td>
-<td>Количество штук в сделке.</td>
-</tr>
-<tr>
-<td>trade_id</td>
-<td><a href="#string">string</a></td>
-<td>Идентификатор сделки.</td>
+<td>archive</td>
+<td><a href="#bool">bool</a></td>
+<td>Только архивные сигналы, по умолчанию false</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -2213,8 +1691,7 @@
 </table>
 <!-- end HasFields -->
 
-<h4 id="postorderrequest">PostOrderRequest</h4>
-<p>Запрос выставления торгового поручения.</p>
+<h4 id="getsignalsresponse">GetSignalsResponse</h4>
 <table>
 <thead>
 <tr>
@@ -2225,44 +1702,9 @@
 </thead>
 <tbody>
 <tr>
-<td>figi</td>
-<td><a href="#string">string</a></td>
-<td>Deprecated Figi-идентификатор инструмента. Необходимо использовать instrument_id.</td>
-</tr>
-<tr>
-<td>quantity</td>
-<td><a href="#int64">int64</a></td>
-<td>Количество лотов.</td>
-</tr>
-<tr>
-<td>price</td>
-<td><a href="#quotation">Quotation</a></td>
-<td>Цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Игнорируется для рыночных поручений.</td>
-</tr>
-<tr>
-<td>direction</td>
-<td><a href="#orderdirection">OrderDirection</a></td>
-<td>Направление операции.</td>
-</tr>
-<tr>
-<td>account_id</td>
-<td><a href="#string">string</a></td>
-<td>Номер счёта.</td>
-</tr>
-<tr>
-<td>order_type</td>
-<td><a href="#ordertype">OrderType</a></td>
-<td>Тип заявки.</td>
-</tr>
-<tr>
-<td>order_id</td>
-<td><a href="#string">string</a></td>
-<td>Идентификатор запроса выставления поручения для целей идемпотентности в формате UID. Максимальная длина 36 символов.</td>
-</tr>
-<tr>
-<td>instrument_id</td>
-<td><a href="#string">string</a></td>
-<td>Идентификатор инструмента, принимает значения Figi или Instrument_uid.</td>
+<td>signals</td>
+<td>Массив объектов <a href="#signal">Signal</a></td>
+<td></td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -2273,8 +1715,7 @@
 </table>
 <!-- end HasFields -->
 
-<h4 id="postorderresponse">PostOrderResponse</h4>
-<p>Информация о выставлении поручения.</p>
+<h4 id="signal">Signal</h4>
 <table>
 <thead>
 <tr>
@@ -2285,429 +1726,49 @@
 </thead>
 <tbody>
 <tr>
-<td>order_id</td>
+<td>signal_id</td>
 <td><a href="#string">string</a></td>
-<td>Биржевой идентификатор заявки.</td>
+<td>идентификатор сигнала</td>
 </tr>
 <tr>
-<td>execution_report_status</td>
-<td><a href="#orderexecutionreportstatus">OrderExecutionReportStatus</a></td>
-<td>Текущий статус заявки.</td>
-</tr>
-<tr>
-<td>lots_requested</td>
-<td><a href="#int64">int64</a></td>
-<td>Запрошено лотов.</td>
-</tr>
-<tr>
-<td>lots_executed</td>
-<td><a href="#int64">int64</a></td>
-<td>Исполнено лотов.</td>
-</tr>
-<tr>
-<td>initial_order_price</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Начальная цена заявки. Произведение количества запрошенных лотов на цену.</td>
-</tr>
-<tr>
-<td>executed_order_price</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Исполненная средняя цена 1 одного инструмента в заявки.</td>
-</tr>
-<tr>
-<td>total_order_amount</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Итоговая стоимость заявки, включающая все комиссии.</td>
-</tr>
-<tr>
-<td>initial_commission</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Начальная комиссия. Комиссия рассчитанная при выставлении заявки.</td>
-</tr>
-<tr>
-<td>executed_commission</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Фактическая комиссия по итогам исполнения заявки.</td>
-</tr>
-<tr>
-<td>aci_value</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Значение НКД (накопленного купонного дохода) на дату. Подробнее: <a href="https://tinkoff.github.io/investAPI/head-orders#coupon">НКД при выставлении торговых поручений</a></td>
-</tr>
-<tr>
-<td>figi</td>
+<td>strategy_id</td>
 <td><a href="#string">string</a></td>
-<td>Figi-идентификатор инструмента.</td>
-</tr>
-<tr>
-<td>direction</td>
-<td><a href="#orderdirection">OrderDirection</a></td>
-<td>Направление сделки.</td>
-</tr>
-<tr>
-<td>initial_security_price</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Начальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.</td>
-</tr>
-<tr>
-<td>order_type</td>
-<td><a href="#ordertype">OrderType</a></td>
-<td>Тип заявки.</td>
-</tr>
-<tr>
-<td>message</td>
-<td><a href="#string">string</a></td>
-<td>Дополнительные данные об исполнении заявки.</td>
-</tr>
-<tr>
-<td>initial_order_price_pt</td>
-<td><a href="#quotation">Quotation</a></td>
-<td>Начальная цена заявки в пунктах (для фьючерсов).</td>
+<td>Идентификатор стратегии</td>
 </tr>
 <tr>
 <td>instrument_uid</td>
 <td><a href="#string">string</a></td>
-<td>UID идентификатор инструмента.</td>
+<td>Идентификатор  бумаги</td>
 </tr>
 <tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="cancelorderrequest">CancelOrderRequest</h4>
-<p>Запрос отмены торгового поручения.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>account_id</td>
-<td><a href="#string">string</a></td>
-<td>Номер счёта.</td>
-</tr>
-<tr>
-<td>order_id</td>
-<td><a href="#string">string</a></td>
-<td>Идентификатор заявки.</td>
-</tr>
-<tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="cancelorderresponse">CancelOrderResponse</h4>
-<p>Результат отмены торгового поручения.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>time</td>
+<td>create_dt</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата и время отмены заявки в часовом поясе UTC.</td>
+<td>Датавремя создания сигнала  в часовом поясе UTC.</td>
 </tr>
 <tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="getorderstaterequest">GetOrderStateRequest</h4>
-<p>Запрос получения статуса торгового поручения.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>account_id</td>
-<td><a href="#string">string</a></td>
-<td>Номер счёта.</td>
-</tr>
-<tr>
-<td>order_id</td>
-<td><a href="#string">string</a></td>
-<td>Идентификатор заявки.</td>
-</tr>
-<tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="getordersrequest">GetOrdersRequest</h4>
-<p>Запрос получения списка активных торговых поручений.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>account_id</td>
-<td><a href="#string">string</a></td>
-<td>Номер счёта.</td>
-</tr>
-<tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="getordersresponse">GetOrdersResponse</h4>
-<p>Список активных торговых поручений.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>orders</td>
-<td>Массив объектов <a href="#orderstate">OrderState</a></td>
-<td>Массив активных заявок.</td>
-</tr>
-<tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="orderstate">OrderState</h4>
-<p>Информация о торговом поручении.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>order_id</td>
-<td><a href="#string">string</a></td>
-<td>Биржевой идентификатор заявки.</td>
-</tr>
-<tr>
-<td>execution_report_status</td>
-<td><a href="#orderexecutionreportstatus">OrderExecutionReportStatus</a></td>
-<td>Текущий статус заявки.</td>
-</tr>
-<tr>
-<td>lots_requested</td>
+<td>lifetime</td>
 <td><a href="#int64">int64</a></td>
-<td>Запрошено лотов.</td>
-</tr>
-<tr>
-<td>lots_executed</td>
-<td><a href="#int64">int64</a></td>
-<td>Исполнено лотов.</td>
-</tr>
-<tr>
-<td>initial_order_price</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Начальная цена заявки. Произведение количества запрошенных лотов на цену.</td>
-</tr>
-<tr>
-<td>executed_order_price</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Исполненная цена заявки. Произведение средней цены покупки на количество лотов.</td>
-</tr>
-<tr>
-<td>total_order_amount</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Итоговая стоимость заявки, включающая все комиссии.</td>
-</tr>
-<tr>
-<td>average_position_price</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Средняя цена позиции по сделке.</td>
-</tr>
-<tr>
-<td>initial_commission</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Начальная комиссия. Комиссия, рассчитанная на момент подачи заявки.</td>
-</tr>
-<tr>
-<td>executed_commission</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Фактическая комиссия по итогам исполнения заявки.</td>
-</tr>
-<tr>
-<td>figi</td>
-<td><a href="#string">string</a></td>
-<td>Figi-идентификатор инструмента.</td>
+<td>Срок действия сигнала, секунд</td>
 </tr>
 <tr>
 <td>direction</td>
-<td><a href="#orderdirection">OrderDirection</a></td>
-<td>Направление заявки.</td>
-</tr>
-<tr>
-<td>initial_security_price</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Начальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.</td>
-</tr>
-<tr>
-<td>stages</td>
-<td>Массив объектов <a href="#orderstage">OrderStage</a></td>
-<td>Стадии выполнения заявки.</td>
-</tr>
-<tr>
-<td>service_commission</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Сервисная комиссия.</td>
-</tr>
-<tr>
-<td>currency</td>
 <td><a href="#string">string</a></td>
-<td>Валюта заявки.</td>
-</tr>
-<tr>
-<td>order_type</td>
-<td><a href="#ordertype">OrderType</a></td>
-<td>Тип заявки.</td>
-</tr>
-<tr>
-<td>order_date</td>
-<td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата и время выставления заявки в часовом поясе UTC.</td>
-</tr>
-<tr>
-<td>instrument_uid</td>
-<td><a href="#string">string</a></td>
-<td>UID идентификатор инструмента.</td>
-</tr>
-<tr>
-<td>order_request_id</td>
-<td><a href="#string">string</a></td>
-<td>Идентификатор ключа идемпотентности, переданный клиентом, в формате UID. Максимальная длина 36 символов.</td>
-</tr>
-<tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="orderstage">OrderStage</h4>
-<p>Сделки в рамках торгового поручения.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>price</td>
-<td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.</td>
-</tr>
-<tr>
-<td>quantity</td>
-<td><a href="#int64">int64</a></td>
-<td>Количество лотов.</td>
-</tr>
-<tr>
-<td>trade_id</td>
-<td><a href="#string">string</a></td>
-<td>Идентификатор сделки.</td>
-</tr>
-<tr>
-<td><!-- end Fields --></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- end HasFields -->
-
-<h4 id="replaceorderrequest">ReplaceOrderRequest</h4>
-<p>Запрос изменения выставленной заявки.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>account_id</td>
-<td><a href="#string">string</a></td>
-<td>Номер счета.</td>
-</tr>
-<tr>
-<td>order_id</td>
-<td><a href="#string">string</a></td>
-<td>Идентификатор заявки на бирже.</td>
-</tr>
-<tr>
-<td>idempotency_key</td>
-<td><a href="#string">string</a></td>
-<td>Новый идентификатор запроса выставления поручения для целей идемпотентности. Максимальная длина 36 символов. Перезатирает старый ключ.</td>
-</tr>
-<tr>
-<td>quantity</td>
-<td><a href="#int64">int64</a></td>
-<td>Количество лотов.</td>
+<td>"buy" / "sell"</td>
 </tr>
 <tr>
 <td>price</td>
-<td><a href="#quotation">Quotation</a></td>
-<td>Цена за 1 инструмент.</td>
+<td><a href="#float">float</a></td>
+<td>Цена бумаги на момент формирования сигнала</td>
 </tr>
 <tr>
-<td>price_type</td>
-<td><a href="#pricetype">PriceType</a></td>
-<td>Тип цены.</td>
+<td>profit</td>
+<td><a href="#float">float</a></td>
+<td>Расчетная прибыль сигнала</td>
+</tr>
+<tr>
+<td>info</td>
+<td><a href="#string">string</a></td>
+<td>Произвольная информация о сигнале</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -2720,138 +1781,6 @@
 <!-- end messages -->
 
 <h3 id="enums">Enums</h3>
-<h4 id="orderdirection">OrderDirection</h4>
-<p>Направление операции.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Number</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ORDER_DIRECTION_UNSPECIFIED</td>
-<td>0</td>
-<td>Значение не указано</td>
-</tr>
-<tr>
-<td>ORDER_DIRECTION_BUY</td>
-<td>1</td>
-<td>Покупка</td>
-</tr>
-<tr>
-<td>ORDER_DIRECTION_SELL</td>
-<td>2</td>
-<td>Продажа</td>
-</tr>
-</tbody>
-</table>
-<h4 id="ordertype">OrderType</h4>
-<p>Тип заявки.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Number</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ORDER_TYPE_UNSPECIFIED</td>
-<td>0</td>
-<td>Значение не указано</td>
-</tr>
-<tr>
-<td>ORDER_TYPE_LIMIT</td>
-<td>1</td>
-<td>Лимитная</td>
-</tr>
-<tr>
-<td>ORDER_TYPE_MARKET</td>
-<td>2</td>
-<td>Рыночная</td>
-</tr>
-<tr>
-<td>ORDER_TYPE_BESTPRICE</td>
-<td>3</td>
-<td>Лучшая цена</td>
-</tr>
-</tbody>
-</table>
-<h4 id="orderexecutionreportstatus">OrderExecutionReportStatus</h4>
-<p>Текущий статус заявки (поручения)</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Number</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>EXECUTION_REPORT_STATUS_UNSPECIFIED</td>
-<td>0</td>
-<td>none</td>
-</tr>
-<tr>
-<td>EXECUTION_REPORT_STATUS_FILL</td>
-<td>1</td>
-<td>Исполнена</td>
-</tr>
-<tr>
-<td>EXECUTION_REPORT_STATUS_REJECTED</td>
-<td>2</td>
-<td>Отклонена</td>
-</tr>
-<tr>
-<td>EXECUTION_REPORT_STATUS_CANCELLED</td>
-<td>3</td>
-<td>Отменена пользователем</td>
-</tr>
-<tr>
-<td>EXECUTION_REPORT_STATUS_NEW</td>
-<td>4</td>
-<td>Новая</td>
-</tr>
-<tr>
-<td>EXECUTION_REPORT_STATUS_PARTIALLYFILL</td>
-<td>5</td>
-<td>Частично исполнена</td>
-</tr>
-</tbody>
-</table>
-<h4 id="pricetype">PriceType</h4>
-<p>Тип цены.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Number</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PRICE_TYPE_UNSPECIFIED</td>
-<td>0</td>
-<td>Значение не определено.</td>
-</tr>
-<tr>
-<td>PRICE_TYPE_POINT</td>
-<td>1</td>
-<td>Цена в пунктах (только для фьючерсов и облигаций).</td>
-</tr>
-<tr>
-<td>PRICE_TYPE_CURRENCY</td>
-<td>2</td>
-<td>Цена в валюте расчётов по инструменту.</td>
-</tr>
-</tbody>
-</table>
 <!-- range .Enums -->
 <!-- range HasServices -->
 <!-- range .Files -->
@@ -2953,7 +1882,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_4">Нестандартные типы данных</h3>
+<h3 id="_3">Нестандартные типы данных</h3>
 <h4 id="moneyvalue">MoneyValue</h4>
 <p>Денежная сумма в определенной валюте</p>
 <table>

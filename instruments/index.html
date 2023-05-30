@@ -988,6 +988,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#optionsby" class="md-nav__link">
+    OptionsBy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#shareby" class="md-nav__link">
     ShareBy
   </a>
@@ -1136,6 +1143,13 @@
           <li class="md-nav__item">
   <a href="#instrumentsrequest" class="md-nav__link">
     InstrumentsRequest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filteroptionsrequest" class="md-nav__link">
+    FilterOptionsRequest
   </a>
   
 </li>
@@ -2346,6 +2360,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#optionsby" class="md-nav__link">
+    OptionsBy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#shareby" class="md-nav__link">
     ShareBy
   </a>
@@ -2494,6 +2515,13 @@
           <li class="md-nav__item">
   <a href="#instrumentsrequest" class="md-nav__link">
     InstrumentsRequest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filteroptionsrequest" class="md-nav__link">
+    FilterOptionsRequest
   </a>
   
 </li>
@@ -3216,10 +3244,20 @@
 </li>
 </ul>
 <h4 id="options">Options</h4>
-<p>Метод получения списка опционов.</p>
+<p>Deprecated Метод получения списка опционов.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentsrequest">InstrumentsRequest</a></p>
+</li>
+<li>
+<p>Тело ответа — <a href="#optionsresponse">OptionsResponse</a></p>
+</li>
+</ul>
+<h4 id="optionsby">OptionsBy</h4>
+<p>Метод получения списка опционов.</p>
+<ul>
+<li>
+<p>Тело запроса — <a href="#filteroptionsrequest">FilterOptionsRequest</a></p>
 </li>
 <li>
 <p>Тело ответа — <a href="#optionsresponse">OptionsResponse</a></p>
@@ -3604,6 +3642,36 @@
 <td>instrument_status</td>
 <td><a href="#instrumentstatus">InstrumentStatus</a></td>
 <td>Статус запрашиваемых инструментов. Возможные значения: <a href="#instrumentstatus">InstrumentStatus</a></td>
+</tr>
+<tr>
+<td><!-- end Fields --></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- end HasFields -->
+
+<h4 id="filteroptionsrequest">FilterOptionsRequest</h4>
+<p>Параметры фильтрации опционов</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basic_asset_uid</td>
+<td><a href="#string">string</a></td>
+<td>Идентификатор базового актива опциона.  Обязательный параметр.</td>
+</tr>
+<tr>
+<td>basic_asset_position_uid</td>
+<td><a href="#string">string</a></td>
+<td>Идентификатор позиции базового актива опциона</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -4113,32 +4181,32 @@
 <tr>
 <td>klong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска длинной позиции по клиенту.</td>
+<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>kshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска короткой позиции по клиенту.</td>
+<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>dlong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска минимальной маржи лонг.</td>
+<td>Ставка риска начальной маржи для КСУР лонг.</td>
 </tr>
 <tr>
 <td>dshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска минимальной маржи шорт.</td>
+<td>Ставка риска начальной маржи для КСУР шорт.</td>
 </tr>
 <tr>
 <td>dlong_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи лонг.</td>
+<td>Ставка риска начальной маржи для КПУР лонг.</td>
 </tr>
 <tr>
 <td>dshort_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи шорт.</td>
+<td>Ставка риска начальной маржи для КПУР шорт.</td>
 </tr>
 <tr>
 <td>min_price_increment</td>
@@ -4519,6 +4587,11 @@
 <td>subordinated_flag</td>
 <td><a href="#bool">bool</a></td>
 <td>Признак субординированной облигации.</td>
+</tr>
+<tr>
+<td>liquidity_flag</td>
+<td><a href="#bool">bool</a></td>
+<td>Флаг достаточной ликвидности</td>
 </tr>
 <tr>
 <td>first_1min_candle_date</td>
@@ -4924,6 +4997,11 @@
 <td>blocked_tca_flag</td>
 <td><a href="#bool">bool</a></td>
 <td>Флаг заблокированного ТКС.</td>
+</tr>
+<tr>
+<td>liquidity_flag</td>
+<td><a href="#bool">bool</a></td>
+<td>Флаг достаточной ликвидности</td>
 </tr>
 <tr>
 <td>first_1min_candle_date</td>
@@ -5359,6 +5437,11 @@
 <td>blocked_tca_flag</td>
 <td><a href="#bool">bool</a></td>
 <td>Флаг заблокированного ТКС</td>
+</tr>
+<tr>
+<td>liquidity_flag</td>
+<td><a href="#bool">bool</a></td>
+<td>Флаг достаточной ликвидности</td>
 </tr>
 <tr>
 <td>first_1min_candle_date</td>
@@ -5941,6 +6024,27 @@
 
 <h4 id="assetsrequest">AssetsRequest</h4>
 <p>Запрос списка активов.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>instrument_type</td>
+<td><a href="#instrumenttype">InstrumentType</a></td>
+<td></td>
+</tr>
+<tr>
+<td><!-- end Fields --></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <!-- end HasFields -->
 
 <h4 id="assetsresponse">AssetsResponse</h4>
@@ -6819,6 +6923,11 @@
 <td>Тип инструмента.</td>
 </tr>
 <tr>
+<td>position_uid</td>
+<td><a href="#string">string</a></td>
+<td>id позиции.</td>
+</tr>
+<tr>
 <td><!-- end Fields --></td>
 <td></td>
 <td></td>
@@ -7110,6 +7219,16 @@
 <td>query</td>
 <td><a href="#string">string</a></td>
 <td>Строка поиска.</td>
+</tr>
+<tr>
+<td>instrument_kind</td>
+<td><a href="#instrumenttype">InstrumentType</a></td>
+<td>Фильтр по типу инструмента.</td>
+</tr>
+<tr>
+<td>api_trade_available_flag</td>
+<td><a href="#bool">bool</a></td>
+<td>Фильтр для отображения только торговых инструментов.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
