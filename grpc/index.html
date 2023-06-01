@@ -1620,8 +1620,8 @@ bidirectional-stream <a href="/investAPI/head-marketdata/">сервиса кот
 <img alt="Интерфейс Kreya" src="/investAPI/img/Kreya-1.png" title="Интерфейс Kreya" /></li>
 <li>Нажмите <em>New importer</em>. Укажите название источника данных и его тип (<em>gRPC proto files</em>).
 <img alt="Интерфейс Kreya" src="/investAPI/img/Kreya-2.png" title="Интерфейс Kreya" /></li>
-<li>Нажмите <em>Add proto directory</em> и укажите папку со скаченными proto-контрактами сервиса TINKOFF INVEST API.
-Скачать актуальную версию контрактов можно по ссылке: <a href="https://github.com/Tinkoff/investAPI/tree/main/src/docs/contracts">TINKOFF INVEST API</a>.
+<li>Нажмите <em>Add proto directory</em> и укажите папку со скаченными proto-контрактами сервиса TINKOFF INVEST API. Вы также можете нажать <em>Add proto files</em> и выбрать ручным способом все proto-файлы из папки.
+Скачать актуальную версию контрактов можно по ссылке на официальном GitHub: <a href="https://github.com/Tinkoff/investAPI/tree/main/src/docs/contracts">TINKOFF INVEST API</a>.
 <img alt="Интерфейс Kreya" src="/investAPI/img/Kreya-3.png" title="Интерфейс Kreya" /></li>
 <li>Сохраните изменения и нажмите <em>Back</em>.</li>
 <li>В левом окне нажмите на появившуюся папку <em>Tinkoff</em>. Укажите Endpoint сервиса: https://invest-public-api.tinkoff.ru:443.
@@ -1645,12 +1645,13 @@ bidirectional-stream <a href="/investAPI/head-marketdata/">сервиса кот
 <p><strong>x-ratelimit-reset</strong> — время в секундах до обнуления счётчика запросов. </p>
 </li>
 </ul>
+<p><strong>Важно!!</strong> Если вы получили ошибку "The referenced gRPC method is not imported.", убедитесь, что вы очистили проект в Kreya от прошлых загруженных контрактов. Также всегда проверяйте путь до папки с загружаемыми контрактами, полное наличие всех proto-файлов и их соответствие актуальной версии на официальном GitHub: <a href="https://github.com/Tinkoff/investAPI/tree/main/src/docs/contracts">TINKOFF INVEST API</a>. Изменение proto-файлов повлечет за собой ошибку их прочтения у gRPS-клиентов.</p>
 <h3 id="bloomrpc">BloomRPC</h3>
 <p>Скачать данный клиент можно по ссылке: <a href="https://github.com/uw-labs/bloomrpc/releases">bloomrpc releases</a>.</p>
 <p>Интерфейс утилиты достаточно прост, для старта работы требуется указать домен сервиса и импортировать
 все proto-файлы. </p>
 <ol>
-<li>Импортируйте скаченные proto-контракты сервиса.
+<li>Импортируйте скаченные proto-контракты сервиса. Скачать актуальную версию контрактов можно по ссылке на официальном GitHub: <a href="https://github.com/Tinkoff/investAPI/tree/main/src/docs/contracts">TINKOFF INVEST API</a>.
 <img alt="Интерфейс BloomRPC" src="/investAPI/img/Bloom-1.png" title="Интерфейс BloomRPC" /></li>
 <li>Укажите адрес сервера invest-public-api.tinkoff.ru:443 и заполните поле metadata значением (подставьте своё значение <a href="/investAPI/token/">токена доступа</a>).</li>
 </ol>
