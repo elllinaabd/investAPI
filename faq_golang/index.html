@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#golang" class="md-skip">
+        <a href="#sdk" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -748,8 +748,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#golang" class="md-nav__link">
-    Пример подключения на Golang
+  <a href="#sdk" class="md-nav__link">
+    Официальный SDK:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdk_1" class="md-nav__link">
+    Неофициальный SDK:
   </a>
   
 </li>
@@ -1418,8 +1425,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#golang" class="md-nav__link">
-    Пример подключения на Golang
+  <a href="#sdk" class="md-nav__link">
+    Официальный SDK:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdk_1" class="md-nav__link">
+    Неофициальный SDK:
   </a>
   
 </li>
@@ -1444,71 +1458,17 @@
 
   <h1>Golang</h1>
 
-<h2 id="golang">Пример подключения на Golang</h2>
-<pre><code class="language-golang">package main
-
-import (
- &quot;context&quot;
- &quot;crypto/tls&quot;
- &quot;fmt&quot;
- &quot;golang.org/x/oauth2&quot;
- &quot;google.golang.org/grpc&quot;
- &quot;google.golang.org/grpc/credentials&quot;
- &quot;google.golang.org/grpc/credentials/oauth&quot;
- &quot;log&quot;
- &quot;os&quot;
- t &quot;tink-grpc-robot/Tinkoff/investAPI&quot;
-)
-
-func main() {
-
- conn, err := grpc.Dial(&quot;invest-public-api.tinkoff.ru:443&quot;,
-  grpc.WithTransportCredentials(credentials.NewTLS(&amp;tls.Config{})),
-  grpc.WithPerRPCCredentials(oauth.NewOauthAccess(&amp;oauth2.Token{
-   AccessToken: os.Getenv(&quot;TINK_TOKEN&quot;),
-  })))
- if err != nil {
-  log.Fatalf(&quot;did not connect: %v&quot;, err)
- }
- defer conn.Close()
-
- instr, err := t.NewInstrumentsServiceClient(conn).GetInstrumentBy(context.Background(), &amp;t.InstrumentRequest{
-  IdType:    t.InstrumentIdType_INSTRUMENT_ID_TYPE_TICKER,
-  ClassCode: &quot;SPBXM&quot;,
-  Id:        &quot;SPCE&quot;,
- })
- if err != nil {
-  panic(err)
- }
-
- dataStream, err := t.NewMarketDataStreamServiceClient(conn).MarketDataStream(context.Background())
- err = dataStream.Send(&amp;t.MarketDataRequest{
-  Payload: &amp;t.MarketDataRequest_SubscribeCandlesRequest{
-   SubscribeCandlesRequest: &amp;t.SubscribeCandlesRequest{
-    SubscriptionAction: t.SubscriptionAction_SUBSCRIPTION_ACTION_SUBSCRIBE,
-    Instruments: []*t.CandleInstrument{
-     {
-      Figi:     instr.Instrument.Figi,
-      Interval: t.SubscriptionInterval_SUBSCRIPTION_INTERVAL_ONE_MINUTE,
-     },
-    },
-   },
-  },
- })
- if err != nil {
-  panic(err)
- }
-
- for {
-  recv, err := dataStream.Recv()
-  if err != nil {
-   panic(err)
-  }
-  fmt.Println(recv.Payload)
- }
-
-}
-</code></pre>
+<h4 id="sdk">Официальный SDK:</h4>
+<ul>
+<li><a href="https://github.com/Tinkoff/invest-api-go-sdk">invest-api-go-sdk</a></li>
+<li><a href="https://github.com/Tinkoff/invest-api-go-sdk/tree/main/examples">примеры</a></li>
+<li><a href="https://github.com/Tinkoff/invest-api-go-sdk/blob/main/examples/order_book_download/order_book.go">загрузчик стаканов из стриминга</a></li>
+</ul>
+<h4 id="sdk_1">Неофициальный SDK:</h4>
+<ul>
+<li><a href="https://github.com/ssummers02/invest-api-go-sdk">от ssummers02</a></li>
+<li><a href="https://github.com/vodolaz095/go-investAPI">от vodolaz095</a></li>
+</ul>
 
 
 
