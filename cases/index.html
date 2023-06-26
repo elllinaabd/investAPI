@@ -443,6 +443,19 @@
     Наиболее популярные кейсы
   </a>
   
+    <nav class="md-nav" aria-label="Наиболее популярные кейсы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Как создать заявку на покупку/продажу инструмента?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1471,6 +1484,19 @@
     Наиболее популярные кейсы
   </a>
   
+    <nav class="md-nav" aria-label="Наиболее популярные кейсы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Как создать заявку на покупку/продажу инструмента?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1496,6 +1522,20 @@
 <h3 id="_1">Наиболее популярные кейсы</h3>
 <p>В случае, если вы хотите понять алгоритм выполнения основных задач вы можете ознакомиться с доступными SDK в разделе "Языки программирования".   </p>
 <p>Рекомендуем для старта также прочитать <a href="https://habr.com/ru/companies/tinkoff/articles/709166/">статью</a>, где можно узнать как создать торгового робота.</p>
+<p>Часть основных шагов, которые необходимо выполнить для выполнения различных наиболее популярных целей в работе с Tinkoff Invest API мы собрали здесь.</p>
+<h4 id="_2">Как создать заявку на покупку/продажу инструмента?</h4>
+<ol>
+<li>Ваша стратегия дает команду продавать/покупать</li>
+<li>Проверяете существует ли позиция по бумаге с помощью метода <a href="/investAPI/instruments/#findinstrument">FindInstrument</a></li>
+<li>Проверяете статус торгового инструмента с помощью  <a href="/investAPI/marketdata/#gettradingstatus">getTradingStatus</a></li>
+<li>Получаете последние цены на инструмент с помощью <a href="/investAPI/marketdata#getlastprices">GetLastPrice</a></li>
+<li>Получаете <em>min_price_increment</em> для расчета цены, которую вы сможете выставить, с помощью метода <a href="/investAPI/instruments/#getinstrumentby">GetInstrumentBy</a></li>
+<li>Проверяете свой счет на аккаунте </li>
+<li>Выставляете заявку методом <a href="/investAPI/orders#postorder">PostOrder</a> и сохраняете полученный <em>order_id</em></li>
+<li>Получаете список активных заявок методом <a href="/investAPI/orders#getorders">GetOrders</a> и проверяете есть ли заявка в списке активных по <em>order_id</em></li>
+<li>Информацию об исполненной заявке по <em>order_id</em> вы можете получить методом <a href="/investAPI/orders#getorderstate">GetOrderState</a></li>
+</ol>
+<p>Как получить информацию об обеспеченности портфеля?</p>
 
 
 
